@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from backend.app.models.kalman import KalmanFilterHedge
-from backend.app.models.metrics import sharpe_ratio, annualized_vol, max_drawdown, win_rate
-from backend.app.utils.data_loading_utils import download_price_series
+from app.models.kalman import KalmanFilterHedge
+from app.models.metrics import sharpe_ratio, annualized_vol, max_drawdown, win_rate
+from app.utils.data_loading_utils import download_price_series
 
 
 def compute_zscore(spread: pd.Series, window: int = 60) -> pd.Series:

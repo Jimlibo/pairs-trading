@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from backend.app.models.backtester import backtest_pair
+from app.models.backtester import backtest_pair
 
 
 def _make_prices(tickers, start, end):
