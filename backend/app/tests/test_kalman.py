@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from app.models.kalman import KalmanFilterHedge
+from backend.app.models.kalman import KalmanFilterHedge
 
 
 def test_kalman_beta_sanity():

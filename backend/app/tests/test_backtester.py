@@ -1,4 +1,6 @@
-from app.models.backtester import backtest_pair
+import pandas as pd
+import numpy as np
+from backend.app.models.backtester import backtest_pair
 
 
 def test_backtest_api_smoke():
