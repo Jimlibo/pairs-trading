@@ -14,7 +14,7 @@ def download_price_series(ticker_list: list[str], start: str = "2015-01-01", end
         pd.DataFrame: DataFrame containing adjusted close prices with dates as index and tickers as columns.
     """
     # download data
-    df = yf.download(ticker_list, start=start, end=end, progress=False)['Adj Close']
+    df = yf.download(ticker_list, start=start, end=end, progress=False, auto_adjust=True)['Close']
 
     # convert them to DataFrame if a single ticker was provided
     if isinstance(df, pd.Series):
