@@ -1,0 +1,20 @@
+# web/backend libraries
+fastapi
+uvicorn[standard]
+gunicorn
+httpx
+
+# data science libraries
+pydantic
+numpy
+pandas
+matplotlib
+
+# finance libraries
+yfinance
+statsmodels
+pykalman
+
+# other
+pytest
+python-dotenv
