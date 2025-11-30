@@ -99,6 +99,8 @@ def backtest_pair(
     # compute performance metrics and store them in a dictionary
     metrics = {
         "dates": cum_ret.index.astype(str).tolist(),
+        "closing_prices_x": x.tolist(),
+        "closing_prices_y": y.tolist(),
         "cum_returns": cum_ret.tolist(),
         "sharpe": float(sharpe_ratio(strategy_ret)),
         "ann_vol": float(annualized_vol(strategy_ret)),

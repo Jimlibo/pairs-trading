@@ -26,6 +26,8 @@ class BacktestResponse(BaseModel):
     ann_vol: float
     max_drawdown: float
     win_rate: float
+    closing_prices_x: List[float]
+    closing_prices_y: List[float]
 
 
 @router.post("/backtest", response_model=BacktestResponse)
